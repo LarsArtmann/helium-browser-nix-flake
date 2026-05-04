@@ -198,12 +198,15 @@
         packages.default = helium;
         packages.helium = helium;
 
+        checks.build = helium;
+
         apps.default = app;
         apps.helium = app;
 
         devShells.default = pkgs.mkShell {
           buildInputs = [helium];
         };
+        formatter = pkgs.nixfmt;
       }
     );
 }
