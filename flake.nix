@@ -204,7 +204,7 @@
         apps.helium = app;
 
         devShells.default = pkgs.mkShell {
-          buildInputs = [helium];
+          packages = [helium];
         };
         formatter = pkgs.nixfmt;
       }
